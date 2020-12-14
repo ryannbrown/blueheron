@@ -27,7 +27,9 @@
 opacity:.5;
   }
 
-  @media (max-width:668px) {
+  /* this has potential to be a bug, as the menu flashes when minimizing on desktop, however setting this at 
+  500px appears to do the trick */
+  @media (max-width:500px) {
       .header{
           transition:.6s;
       }
@@ -54,9 +56,6 @@ li {
     -webkit-transition: background-color 300ms ease-in;
     transition: background-color 300ms ease-in;
   }
-
-
-
 
   /**---- Mobile Bar ----**/
 
