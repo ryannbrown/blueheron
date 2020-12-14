@@ -5,8 +5,6 @@ import React, { Component } from 'react';
 import HomeHero from "../../components/HomeHero/index";
 import './style.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteLeft, faGlassMartini } from '@fortawesome/free-solid-svg-icons'
 
 
 export default class Homepage extends Component {

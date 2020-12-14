@@ -26,18 +26,18 @@ export default class HomeHero extends Component {
 
 
   componentDidMount() {
-    this.listener = document.addEventListener("scroll", e => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 120) {
-        if (this.state.status !== "bgChanged") {
-          this.setState({ status: "bgChanged" });
-        }
-      } else {
-        if (this.state.status !== "top") {
-          this.setState({ status: "top" });
-        }
-      }
-    });
+    // this.listener = document.addEventListener("scroll", e => {
+    //   var scrolled = document.scrollingElement.scrollTop;
+    //   if (scrolled >= 120) {
+    //     if (this.state.status !== "bgChanged") {
+    //       this.setState({ status: "bgChanged" });
+    //     }
+    //   } else {
+    //     if (this.state.status !== "top") {
+    //       this.setState({ status: "top" });
+    //     }
+    //   }
+    // });
   }
 
   componentDidUpdate() {
@@ -52,12 +52,6 @@ export default class HomeHero extends Component {
 
     return (
       <div className="inner">
-        <div className="cta-nav-btn">
-          <a href="/contact">
-            <button className="contact-btn-link">Contact us</button>
-          </a>
-        </div>
-
         <div>
           <div sm={12} md={12} className="home-img" style={{
             backgroundImage: `url(${heroImg})`,

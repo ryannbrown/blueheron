@@ -1,7 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import { Container, Nav, Button, Col, Row, Card } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +9,8 @@ import {
   useParams
 } from "react-router-dom";
 import Homepage from "./pages/Homepage/index"
+import Nav from "./components/Nav/index"
+// import Mobile from "./components/Nav/mobile"
 import Contact from "./pages/Contact/index"
 import createHistory from 'history/createBrowserHistory';
 
@@ -23,12 +24,15 @@ function App() {
 
   return (
     <div className="App">
+       <Nav></Nav>
+       {/* <Mobile></Mobile> */}
          <Router history = {history}>
            <Switch>
-             <Route path="/contact" component={Contact}/>
+             {/* <Route path="/contact" component={Contact}/> */}
              <Route path="/" component={Homepage}/>
-           </Switch>
+           </Switch>       
          </Router>
+      
     </div>
   
   );
