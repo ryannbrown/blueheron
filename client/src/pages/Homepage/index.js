@@ -44,9 +44,9 @@ export default class Homepage extends Component {
 
     render() {
         return (
-            <div className="homepage-content" style={{
+            <div className="homepage" style={{
                 // height: `20vh`, /* Fallback for browsers that do not support Custom Properties */
-                height: `${this.state.height}`
+                // height: `${this.state.height}`
             }}>
                 <HomeHero height={this.state.height}></HomeHero>
             <div className="home-blue-block" style={{ height:this.state.height}}>

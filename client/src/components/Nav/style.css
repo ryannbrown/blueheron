@@ -8,7 +8,7 @@
     display:flex;
       visibility: hidden;
       opacity: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     padding-top: 60px;
@@ -157,7 +157,7 @@ li {
       display:flex;
       justify-content: space-between;
       z-index: 5;
-      position: fixed;
+      position: absolute;
       left: 0;
       padding-top: 60px;
       width: 100%;

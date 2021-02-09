@@ -11,6 +11,7 @@ import {
 import Homepage from "./pages/Homepage/index"
 import About from "./pages/About/index.js"
 import Nav from "./components/Nav/index"
+import Footer from "./components/Footer/index"
 // import Mobile from "./components/Nav/mobile"
 import Contact from "./pages/Contact/index"
 import createHistory from 'history/createBrowserHistory';
@@ -34,7 +35,7 @@ function App() {
              <Route path="/" component={Homepage}/>
            </Switch>       
          </Router>
-      
+      <Footer></Footer>
     </div>
   
   );
