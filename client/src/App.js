@@ -9,6 +9,7 @@ import {
   useParams
 } from "react-router-dom";
 import Homepage from "./pages/Homepage/index"
+import About from "./pages/About/index.js"
 import Nav from "./components/Nav/index"
 // import Mobile from "./components/Nav/mobile"
 import Contact from "./pages/Contact/index"
@@ -29,6 +30,7 @@ function App() {
          <Router history = {history}>
            <Switch>
              {/* <Route path="/contact" component={Contact}/> */}
+             <Route path="/about" component={About}/>
              <Route path="/" component={Homepage}/>
            </Switch>       
          </Router>

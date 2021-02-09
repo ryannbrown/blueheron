@@ -39,9 +39,10 @@ export default class HomeHero extends Component {
       <div className="inner">
         <div>
           <div className="home-img" style={{
-            backgroundImage: `url(${heroImg})`,
-            backgroundColor: `#F9F8F0`,
-            opacity: `90%`,
+            // backgroundImage: `url(${heroImg})`,
+            // backgroundColor: `#F9F8F0`,
+            backgroundColor: `#EDEDED`,
+            // opacity: `90%`,
             backgroundBlendMode: `multiply`,
             backgroundPosition: `center`,
             backgroundSize: `cover`,
@@ -53,10 +54,8 @@ export default class HomeHero extends Component {
             position: `relative`
           }}>
             <img className="hero-logo" src={logo}></img>
-       
-
-            <br></br>
-            <p style={{color:'#0e3b62'}} className="action-button">February 2021</p>
+            {/* <br></br> */}
+            {/* <p style={{color:'#0e3b62'}} className="action-button">February 2021</p> */}
           </div>
         </div>
       </div>

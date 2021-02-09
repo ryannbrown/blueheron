@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import birdLogo from "../../media/logo.png"
 var _ = require("lodash");
 // import Mobile from "./mobile"
 
@@ -53,10 +54,13 @@ export default class Nav extends Component {
     return (
       <div className="nav-section">
       <header id="navvy-bar" class={this.state.mobileNavToggle ? 'mobile-header' : 'header'}>
+        <div className="nav-brand">
+          <img src={birdLogo}></img>
+        </div>
           <nav>
             <ul>
               <li>
-                <a href="#">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="#">Cooking</a>
