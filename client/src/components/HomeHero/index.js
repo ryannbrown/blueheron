@@ -77,7 +77,7 @@ export default class HomeHero extends Component {
        
 
             <br></br>
-            <p className="action-button primaryTextColor">April 2021</p>
+            <p className="action-button primaryTextColor">August 2021</p>
           </div>
         </div>
       </div>
