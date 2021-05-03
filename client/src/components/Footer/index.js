@@ -45,8 +45,10 @@ export default class Footer extends Component {
             <p>Stay in touch!</p>
             <form><input placeholder="Enter Email"></input><button>Subscribe</button></form>
             <div className="social-wrapper">
-                <img src={instaLogo}></img>
-                <img src={fbLogo}></img>
+                <a href="/"><img src={instaLogo}></img>
+                    </a>
+                <a href="/"><img src={fbLogo}></img>
+                    </a>
             </div>
             </div>
         </div>
