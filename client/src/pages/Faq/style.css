@@ -1,4 +1,4 @@
-.about-page-block {
+.faq-page-block {
     /* display:flex;
     flex-direction:column;
     justify-content: center;
@@ -9,27 +9,29 @@
     position:relative;
 }
 
-.about-block-content {
-    max-width:425px;
+.faq-block-content {
+    max-width:997px;
     margin:0px auto;
-    text-align:center;
+    text-align:left;
     height:100%;
         display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top:344px;
+    padding:125px 25px;
 }
 
-.about-block-content p {
+.faq-block-content p {
     font-size:14px;
     
 }
 
-.about-page h1 {
+.faq-page h1 {
     color:#0E3B62;
 }
 
-.about-page-block p {
+.faq-page-block p {
     color:#6E6E6E;
 }
 
@@ -54,19 +56,19 @@
 }
 
 
-.about-block-img {
+.faq-block-img {
     position:absolute;
     width:100%;
    height:20vh;
     background-color:thistle;
 }
 
-.about-block-img.water {
+.faq-block-img.water {
     background-image:url('https://images.unsplash.com/photo-1457195740896-7f345efef228?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80');
     background-size:cover;
     background-position:center;
 }
-.about-block-img.salt {
+.faq-block-img.salt {
     background-image:url('https://images.unsplash.com/photo-1604697976327-4f28ff459803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
     background-size:cover;
     background-position:center;

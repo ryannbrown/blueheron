@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import birdLogo from "../../media/logo.png"
+import {NavLink} from "react-router-dom"
 var _ = require("lodash");
 // import Mobile from "./mobile"
 
@@ -60,22 +61,25 @@ export default class Nav extends Component {
           <nav>
             <ul>
               <li>
-                <a href="/about">About</a>
+                <NavLink activeClassName="active" exact to="/">Home</NavLink>
               </li>
               <li>
-                <a href="#">Cooking</a>
+                <NavLink activeClassName="active" to="/about">About</NavLink>
               </li>
               <li>
-                <a href="#">Instructions</a>
+                <NavLink activeClassName="active" to="/cooking">Cooking</NavLink>
               </li>
+              {/* <li>
+                <NavLink activeClassName="active" to="/instructions">Instructions</NavLink>
+              </li> */}
               <li>
-                <a href="#">Find</a>
+                <NavLink activeClassName="active" to="/faq">FAQ</NavLink>
               </li>
+              {/* <li>
+                <NavLink activeClassName="active" to="/find">Find</NavLink>
+              </li> */}
               <li>
-                <a href="#">FAQ's</a>
-              </li>
-              <li>
-                <a href="#">Connect</a>
+                <NavLink activeClassName="active" to="/contact">Contact</NavLink>
               </li>
             </ul>
           </nav>

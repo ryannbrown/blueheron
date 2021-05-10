@@ -251,3 +251,15 @@ li {
   height:50px;
   /* margin-top:-30px; */
 }
+
+nav a {
+  opacity:.75;
+}
+
+nav a:hover {
+  opacity:1 !important;
+}
+
+.active {
+  opacity:1 !important;
+}
