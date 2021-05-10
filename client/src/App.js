@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import {
@@ -18,20 +18,32 @@ import LoginScreen from "./components/LoginScreen/index"
 // import Mobile from "./components/Nav/mobile"
 import Contact from "./pages/Contact/index"
 import createHistory from 'history/createBrowserHistory';
+import { ThemeContextConsumer, ThemeContextProvider } from "./utils/themeContext";
 
 
-function App() {
+class App extends Component {
+  static contextType = ThemeContextConsumer;
+  constructor(props) {
+    super(props)
+    this.state = {
+    };
+    // this.handler = this.handler.bind(this);
+  }
+  // const history = createHistory({
+  //   basename: process.env.PUBLIC_URL,
+  // });
 
+  render() {
 
-  const history = createHistory({
-    basename: process.env.PUBLIC_URL,
-  });
-
+ 
   return (
+    <ThemeContextConsumer>
+    {(context) => (
     <div className="App">
        {/* <Mobile></Mobile> */}
-       <LoginScreen></LoginScreen>
-         <Router history = {history}>
+{!context.userLoggedIn &&  <LoginScreen></LoginScreen> }
+    
+         <Router>
        <Nav></Nav>
            <Switch>
              {/* <Route path="/contact" component={Contact}/> */}
@@ -43,8 +55,10 @@ function App() {
          </Router>
       <Footer></Footer>
     </div>
-  
-  );
+     )}
+     </ThemeContextConsumer>
+   )
+  }
 }
 
 export default App;
