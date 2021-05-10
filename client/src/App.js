@@ -14,6 +14,7 @@ import FrequentlyAsked from "./pages/Faq/index.js"
 import Cooking from "./pages/Cooking/index"
 import Nav from "./components/Nav/index"
 import Footer from "./components/Footer/index"
+import LoginScreen from "./components/LoginScreen/index"
 // import Mobile from "./components/Nav/mobile"
 import Contact from "./pages/Contact/index"
 import createHistory from 'history/createBrowserHistory';
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="App">
        {/* <Mobile></Mobile> */}
-       <div className="login-screen"></div>
+       <LoginScreen></LoginScreen>
          <Router history = {history}>
        <Nav></Nav>
            <Switch>
