@@ -112,7 +112,7 @@ button:focus {
     padding:25px;
 }
 
-input, textarea {
+.modal-content input, textarea {
     outline:none;
     color:white;
     /* font-family: 'adelle-ultrathin'; */
@@ -189,7 +189,7 @@ textarea{
 }
 
 }
-input {
+.modal-content input {
     height:50px;
 }
 

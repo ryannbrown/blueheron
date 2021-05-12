@@ -64,6 +64,22 @@
     text-align: center;
     border:none;
 }
+.login-screen form {
+    font-size:22px;
+    height: 60px;
+    /* opacity:.5 !i mportant; */
+    width: 180px;
+    width:100%;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    align-items: center;
+    padding: 10px;
+    transition: .6s;
+    text-align: center;
+    border:none;
+}
 
 .btn-outline-dark {
     color:white;
@@ -158,4 +174,24 @@
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
+}
+
+.home-blue-block {
+    background-color:#C7D8E6;
+    display:flex;
+    /* flex-direction:column; */
+    align-items:center;
+    justify-content: center;
+}
+
+.home-blue-block-content { 
+    max-width:550px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    color:#0E3B62;
+}
+
+.home-blue-block-content *{
+margin:25px 0px;
 }
