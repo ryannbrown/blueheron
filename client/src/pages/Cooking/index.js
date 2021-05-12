@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import labelInstructions from "../../media/labelinstructions.JPG"
 
 import "./style.css";
 
@@ -40,10 +41,10 @@ export default class Cooking extends Component {
             // height: `${this.state.height}`
           }
         }
-      >
-        <div className="about-page-block" style={{ height: this.state.height }}>
-          <div className="about-block-img water first" style={{}}></div>
-          <div className="about-block-content first">
+        >
+        <div className="block-img water first" style={{}}></div>
+        <div className="page-block cooking">
+          <div className="block-content cooking first">
             {/* <h1>Water</h1> */}
             <p>
               Why does pasta taste so great at a restaurant? Because it’s
@@ -58,11 +59,14 @@ export default class Cooking extends Component {
               homemade marinara to simple butter noodles, Blue Heron Pasta Water
               ™ is the Simple Solution for Perfect Pasta!
             </p>
+            <div>
+              <img src={labelInstructions}></img>
+            </div>
           </div>
-          <div className="scroll-block">
+          {/* <div className="scroll-block">
             <p>Scroll</p>
             <hr></hr>
-          </div>
+          </div> */}
         </div>
       </div>
     );

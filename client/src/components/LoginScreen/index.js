@@ -48,6 +48,18 @@ this.fixOverflow();
 
 
       fixOverflow = () => {
+        console.log("fixing overflow")
+
+        let userStorageEmail = sessionStorage.getItem("isLoggedIn")
+
+        if (userStorageEmail) {
+          console.log(userStorageEmail, "got it")
+          this.setState({
+            overflowHidden: false})
+          document.getElementsByTagName('body')[0].style.overflowY='unset';
+          return;
+        }
+
         // console.log(this.state.overflowHidden)
     if (this.state.overflowHidden) {
       document.getElementsByTagName('body')[0].style.overflowY='hidden';
