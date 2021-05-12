@@ -54,8 +54,8 @@ export default class HomeHero extends Component {
             position: `relative`
           }}>
             <img className="hero-logo" src={logo}></img>
-            {/* <br></br> */}
-            {/* <p style={{color:'#0e3b62'}} className="action-button">February 2021</p> */}
+            <br></br>
+            <p className="action-button primaryTextColor">August 2021</p>
           </div>
         </div>
       </div>
