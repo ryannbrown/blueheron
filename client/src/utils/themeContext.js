@@ -14,16 +14,27 @@ const { Provider, Consumer } = React.createContext();
 
    }
   
+   componentDidMount() {
 
-componentDidUpdate(){
-console.log('updated context', this.state)
-}
+    let userStorageEmail = sessionStorage.getItem("isLoggedIn")
+
+    if ( userStorageEmail) {
+    
+      this.setState({
+        userLoggedIn: true
+      })
+    }
+    
+
+   }
+
 
 loginUser = () => {
     console.log("Let's log in!")
     this.setState({
         userLoggedIn:true
     })
+    window.sessionStorage.setItem('isLoggedIn', true);
     
 }
 
