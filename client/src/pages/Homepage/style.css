@@ -56,7 +56,7 @@
     justify-content: center;
     position: absolute;
     display: flex;
-    bottom: 120px;
+    bottom: 250px;
     align-items: center;
     padding: 10px;
     transition: .6s;
@@ -72,7 +72,7 @@
     justify-content: center;
     position: absolute;
     display: flex;
-    bottom: 20px;
+   bottom: 200px;
     align-items: center;
     padding: 10px;
     transition: .6s;

@@ -85,12 +85,14 @@ button:focus {
 .hero-logo {
     margin:0px auto;
     width:25%;
+    margin-bottom:250px;
 }
 
 @media (max-width:667px) {
     .hero-logo {
         margin:0px auto;
         width:50%;
+        margin-bottom:250px;
     }
 
     .cta-nav-btn{
@@ -109,7 +111,7 @@ button:focus {
     width: 100%;
     width: 400px;
     position: absolute;
-    bottom: 80px;
+    bottom: 200px;
     padding: 10px;
     transition: .6s;
     text-align: center;
@@ -123,6 +125,7 @@ button:focus {
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .login-form p {
