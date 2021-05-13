@@ -12,11 +12,31 @@ export default class Nav extends Component {
     this.listener = null;
     this.state = {
       status: "top",
-      mobileNavToggle: false
+      mobileNavToggle: false,
+      fixOverflow:false
     };
   }
 
+  handleMobileNav = () => {
+    this.fixOverflow();
+    this.setState({ mobileNavToggle: false });
+    document.getElementById("menu-toggle").checked = false;
+  };
+
+
+  fixOverflow = () => {
+    console.log(this.state.overflowHidden)
+if (!this.state.overflowHidden) {
+  document.getElementsByTagName('body')[0].style.overflowY='hidden';
+} else {
+  document.getElementsByTagName('body')[0].style.overflowY='unset';
+}
+    this.setState({overflowHidden: !this.state.overflowHidden})
+  }
+
   toggleNav = () => {
+this.fixOverflow();
+
    if (this.state.mobileNavToggle) {
      this.setState({
          mobileNavToggle: false
@@ -28,7 +48,9 @@ export default class Nav extends Component {
    }
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    // this.fixOverflow();
+  }
 
   componentDidUpdate() {
     window.addEventListener(
@@ -59,29 +81,55 @@ export default class Nav extends Component {
           <img src={birdLogo}></img>
         </div>
           <nav>
+          {this.state.mobileNavToggle ? (
             <ul>
               <li>
-                <NavLink activeClassName="active" exact to="/">Home</NavLink>
+                <NavLink onClick={this.handleMobileNav} activeClassName="active" exact to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/about">About</NavLink>
+                <NavLink onClick={this.handleMobileNav} activeClassName="active" to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to="/cooking">Cooking</NavLink>
+                <NavLink onClick={this.handleMobileNav} activeClassName="active" to="/cooking">Cooking</NavLink>
               </li>
               {/* <li>
                 <NavLink activeClassName="active" to="/instructions">Instructions</NavLink>
               </li> */}
               <li>
-                <NavLink activeClassName="active" to="/faq">FAQ</NavLink>
+                <NavLink onClick={this.handleMobileNav} activeClassName="active" to="/faq">FAQ</NavLink>
               </li>
               {/* <li>
                 <NavLink activeClassName="active" to="/find">Find</NavLink>
               </li> */}
               <li>
-                <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+                <NavLink onClick={this.handleMobileNav} activeClassName="active" to="/contact">Contact</NavLink>
               </li>
-            </ul>
+            </ul> ) : (
+                 <ul>
+                 <li>
+                   <NavLink activeClassName="active" exact to="/">Home</NavLink>
+                 </li>
+                 <li>
+                   <NavLink activeClassName="active" to="/about">About</NavLink>
+                 </li>
+                 <li>
+                   <NavLink activeClassName="active" to="/cooking">Cooking</NavLink>
+                 </li>
+                 {/* <li>
+                   <NavLink activeClassName="active" to="/instructions">Instructions</NavLink>
+                 </li> */}
+                 <li>
+                   <NavLink activeClassName="active" to="/faq">FAQ</NavLink>
+                 </li>
+                 {/* <li>
+                   <NavLink activeClassName="active" to="/find">Find</NavLink>
+                 </li> */}
+                 <li>
+                   <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+                 </li>
+               </ul>
+            )
+                }
           </nav>
         </header>
         <input type="checkbox" class="menu-toggle" id="menu-toggle" onClick={this.toggleNav} />
