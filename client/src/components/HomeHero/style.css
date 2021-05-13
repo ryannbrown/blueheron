@@ -74,13 +74,14 @@ button:focus {
     border-color: #6F8EA8;
 }
 
-.hero-logo {
+.hero-logo.hero {
     margin:0px auto;
     width:25%;
+    margin-bottom:50px;
 }
 
 @media (max-width:667px) {
-    .hero-logo {
+    .hero-logo.hero {
         margin:0px auto;
         width:50%;
     }

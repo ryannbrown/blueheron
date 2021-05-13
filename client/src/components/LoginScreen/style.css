@@ -85,11 +85,11 @@ button:focus {
 .hero-logo {
     margin:0px auto;
     width:25%;
-    margin-bottom:250px;
+    /* margin-bottom:250px; */
 }
 
 @media (max-width:667px) {
-    .hero-logo {
+    .hero-logo.login {
         margin:0px auto;
         width:50%;
         margin-bottom:250px;

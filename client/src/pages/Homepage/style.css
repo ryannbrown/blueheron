@@ -62,6 +62,7 @@
     transition: .6s;
     text-align: center;
     border: none;
+    color:#0E3B62;
 }
 .login-screen form {
     font-size:22px;
@@ -189,6 +190,7 @@
     flex-direction:column;
     text-align:center;
     color:#0E3B62;
+    padding:25px;
 }
 
 .home-blue-block-content *{

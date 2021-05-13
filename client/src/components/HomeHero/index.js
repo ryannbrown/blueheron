@@ -53,7 +53,7 @@ export default class HomeHero extends Component {
             alignItems: `center`,
             position: `relative`
           }}>
-            <img className="hero-logo" src={logo}></img>
+            <img className="hero-logo hero" src={logo}></img>
             <br></br>
             <p className="action-button primaryTextColor">August 2021</p>
           </div>
