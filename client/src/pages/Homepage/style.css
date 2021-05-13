@@ -49,20 +49,19 @@
 
 
 .action-button {
-    font-size:22px;
+    font-size: 22px;
     height: 60px;
-    /* opacity:.5 !i mportant; */
     width: 180px;
-    width:100%;
+    width: 100%;
     justify-content: center;
     position: absolute;
     display: flex;
-    bottom: 60px;
+    bottom: 250px;
     align-items: center;
     padding: 10px;
     transition: .6s;
     text-align: center;
-    border:none;
+    border: none;
 }
 .login-screen form {
     font-size:22px;
@@ -73,7 +72,7 @@
     justify-content: center;
     position: absolute;
     display: flex;
-    bottom: 20px;
+   bottom: 200px;
     align-items: center;
     padding: 10px;
     transition: .6s;
