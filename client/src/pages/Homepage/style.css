@@ -64,6 +64,10 @@
     border: none;
     color:#0E3B62;
 }
+
+.action-button.home {
+    bottom: 200px;
+}
 .login-screen form {
     font-size:22px;
     height: 60px;

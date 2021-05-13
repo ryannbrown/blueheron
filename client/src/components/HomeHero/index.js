@@ -55,7 +55,7 @@ export default class HomeHero extends Component {
           }}>
             <img className="hero-logo hero" src={logo}></img>
             <br></br>
-            <p className="action-button primaryTextColor">August 2021</p>
+            <p className="action-button home primaryTextColor">August 2021</p>
           </div>
         </div>
       </div>
