@@ -113,7 +113,7 @@ this.fixOverflow();
                 position: `relative`,
                 height:'100vh'
               }}>
-                <img className="hero-logo" src={logo}></img>
+                <img className="hero-logo login" src={logo}></img>
            
                 <br></br>
                 <p className="action-button primaryTextColor">Coming August 2021</p>

@@ -69,10 +69,10 @@ and sorted down to individual grains by optical sensors for unsurpassed consiste
                 {/* <p>It started at the beach. While pondering the chef’s adage that pasta water should taste “of the sea”, a stockpot of Atlantic seawater was fetched for the stove. </p>
                 <p>Too briny on its own, we diluted it to an approximation of restaurant pasta water, and the clams dug that morning were paired with linguini in a meal in where the noodles sang the high notes.</p> */}
                 </div>
-            <div className="scroll-block-2">
+            {/* <div className="scroll-block-2">
        
                 <hr></hr>
-            </div>
+            </div> */}
             </div>
             {/* <div className="page-block" style={{ height:this.state.height}}>
                 <div className="block-img" style={{}}></div>
