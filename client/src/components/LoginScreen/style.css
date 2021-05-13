@@ -108,20 +108,15 @@ button:focus {
     height: 60px;
     width: 100%;
     width: 400px;
-    justify-content: center;
     position: absolute;
-    display: flex;
-    bottom: 20px;
-    align-items: center;
+    bottom: 80px;
     padding: 10px;
     transition: .6s;
     text-align: center;
     border: none;
-    justify-content: center;
     max-width: 600px;
-    margin: 0px auto;
     left: 50%;
-    margin-left: -200px;
+    margin: 0 auto 0 -200px;
 }
 
 .login-form {
@@ -136,23 +131,25 @@ button:focus {
 
 .login-form input {
     outline: none;
-    color: #0e3b62;
+    color: #0E3B62;
     display: block;
     margin: 10px auto;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 5px;
     height: 35px;
-    padding: 10px;
+    padding: 1.5rem;
     line-height: 25px;
     width: 200px;
+    font-size:18px;
   }
 
   .login-form button {
-    background-color: #fff;
-    color: #0e3b62;
+    background-color: #0e3b6200;
+    color: #0E3B62;
     border: none;
     display: block;
+    border: 2px solid #284D70;
     width: 150px;
     margin: 0 auto;
     text-align: center;
@@ -161,7 +158,7 @@ button:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding: .375rem .75rem;
+    padding: .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
