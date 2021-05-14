@@ -12,6 +12,7 @@ import Homepage from "./pages/Homepage/index"
 import About from "./pages/About/index.js"
 import FrequentlyAsked from "./pages/Faq/index.js"
 import Cooking from "./pages/Cooking/index"
+import ScrollToTop from "./utils/scrollToTop.js"
 import Nav from "./components/Nav/index"
 import Footer from "./components/Footer/index"
 import LoginScreen from "./components/LoginScreen/index"
@@ -45,6 +46,7 @@ class App extends Component {
     
          <Router>
        <Nav></Nav>
+       <ScrollToTop/>
            <Switch>
              {/* <Route path="/contact" component={Contact}/> */}
              <Route path="/about" component={About}/>

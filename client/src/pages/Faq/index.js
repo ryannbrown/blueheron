@@ -75,10 +75,10 @@ export default class FrequentlyAsked extends Component {
                 <p>A minimum of two years from the bottling printed on the cap, if kept sealed and stored at room temperature. For practical purposes, it can be treated like bottled drinking water. It will not “go bad” and does not require refrigeration once opened.</p>
 
                 </div>
-            <div className="scroll-block">
+            {/* <div className="scroll-block">
                 <p>Scroll</p>
                 <hr></hr>
-            </div>
+            </div> */}
             </div>
   
             </div>
