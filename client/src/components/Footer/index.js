@@ -31,9 +31,10 @@ export default class Footer extends Component {
             <img src={logo}></img>
           </div>
           <div className="contact-info">
-            <p>Blue Heron Culinary, Raleigh, NC - 27622 </p>
+            <p>Blue Heron Culinary</p>
+            <p>Raleigh, NC 27622 </p>
             <p>blueheronculinary.com</p>
-            <p>Stirred up by Just Soup</p>
+            {/* <p>Stirred up by Just Soup</p> */}
             <div id="DMCA-badge">
               <div
                 className="dm-1 dm-1-b"
