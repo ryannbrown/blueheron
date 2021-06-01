@@ -67,6 +67,8 @@ export default class FrequentlyAsked extends Component {
                 <p>That level of commitment deserves perfectly seasoned noodles! We suggest tasting and testing. You may need to adjust added salt to  homemade pestos or other sauces using high-sodium ingredients like olives or anchovies. Blue Heron Pasta Water ™ will give Nanna’s favorite recipe the showcase it deserves with consistently delicious pasta noodles</p>
                 <h1>Can I cook ravioli, gnocchi and tortellini using Pasta Water ™?</h1>
                 <p>Yes… and make extra, because you’ll be popping them like snacks! Pasta Water ™ is an exceptional cooking bath for wrapped pastas (and gnocchi dumplings). Just as with dry pasta, be careful with any salt additions to your sauces. You can always add more salt, but you can’t take it away!</p>
+                <h1>What about lasagna noodles?</h1>
+                <p>Yes, again! Lasagna recipes almost always recommend at least partially boiling or soaking noodles in salted water prior to layering. You’ll likely need to adjust the salt (especially the sauce), if it’s called for in the recipe, but boil away! Pasta Water ™ will add an extra gear to your favorite lasagna dish.</p>
                 <h1>When does Pasta Water ™ not work well?</h1>
                 <p>Pasta Water ™ is very well-suited to most commercial sauces, but packaged cheese sauces usually contain plenty of sodium on their own. Just about any boxed version of macaroni and cheese, shells and cheese, etc. is not recommended with noodles cooked in Pasta Water ™.</p>
                 <h1>Is Pasta Water ™ safe to drink?</h1>
