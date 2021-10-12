@@ -116,7 +116,7 @@ this.fixOverflow();
                 <img className="hero-logo login" src={logo}></img>
            
                 <br></br>
-                <p className="action-button primaryTextColor">Coming August 2021</p>
+                {/* <p className="action-button primaryTextColor">Coming August 2021</p> */}
                 <form onSubmit={this.handleLogin} className="login-form">
                     <input  type="text" ref={this.passwordRef} type="password" placeholder="enter password"></input>
                     <button>Sign In</button>
